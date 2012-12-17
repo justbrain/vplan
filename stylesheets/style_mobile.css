@@ -1,0 +1,168 @@
+body {
+	font-family: Ubuntu, 'Trebuchet MS', Verdana, Arial;
+	font-size: 13px;
+	color: #000;
+	padding: 0;
+	margin: 0;
+	padding-top: 40px;
+}
+#plan table {
+	width: 100%;
+}
+#plan-content {
+	position: relative;
+}
+#plan-menu {
+	float: right;
+	font-weight: bold;
+	font-size: 15px;
+	margin: 5px 0;
+}
+#plan-menu ul, #plan-menu li {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+#plan-menu li {
+	float: left;
+	padding: 7px;
+}
+.plan-type-1, .plan-type-5 {
+	background-color: rgba(255, 0, 0, .2) !important;
+	background-color: #f00;
+}
+.plan-row:first-child {
+	border-top: 1px #000 solid;
+}
+.plan-row {
+	height: 35px;
+	border-bottom: 1px #000 solid;
+	position: relative;
+	padding: 5px;
+}
+.plan-subject {
+	float: left;
+	font-weight: bold;
+}
+.plan-classes {
+	position: absolute;
+	left: 60px;
+}
+.plan-lessons {
+	float: right;
+}
+.plan-room {
+	clear: left;
+	float: left;
+}
+.plan-description {
+	clear: right;
+	float: right;
+	margin-left: 10px;
+}
+.plan-type {
+	float: right;
+}
+
+.clearfix {
+	clear: both;
+}
+.javascript-available {
+	display: none;
+}
+
+a:link, a:active, a:visited {
+	color: #000;
+	text-decoration: none;
+}
+a:hover, a:focus, a.active {
+	color: #f00;
+	text-decoration: underline;
+}
+
+#classes {
+	text-align: right;
+}
+#classes a {
+	font-weight: bold;
+	font-size: 20px;
+	margin: 5px 10px;
+}
+
+
+table {
+	background: #ccc;
+	margin: 0;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border-collapse: collapse
+}
+table th {
+	padding: 4px 10px;
+	text-align: left;
+}
+table td {
+	background: #fff;
+	padding: 2px 10px 4px 10px
+}
+table tr.even td {
+	background: #eee;
+}
+table tr:last-child td:first-child {
+	-moz-border-radius-bottomleft: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	border-bottom-left-radius: 10px
+}
+table tr:last-child td:last-child {
+	-moz-border-radius-bottomright: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	border-bottom-right-radius: 10px
+}
+
+.warning {
+	border-top: 1px #39f dashed;
+	border-bottom: 1px #39f dashed;
+	background-color: #cce5ff;
+	padding: 5px;
+	margin: 10px 0;
+}
+
+#header a:link, #header a:active, #header a:visited {
+	color: #fff;
+}
+#header a:hover, #header a:focus, #header a.active {
+	color: #f00;
+	text-decoration: none;
+}
+#header-wrapper {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	background-color: #9bb0c5;
+	height: 40px;
+	color: #fff;
+}
+#logo {
+	padding: 3px;
+	float: left;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+#content {
+	width: 100%;
+}
+
+#footer {
+	width: 100%;
+	font-size: 12px;
+}
+#footer-wrapper {
+	margin-top: 20px;
+	padding-bottom: 10px;
+	width: 100%;
+	background-color: #fff;
+}
