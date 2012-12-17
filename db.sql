@@ -2,7 +2,7 @@
 -- version 3.5.1
 -- http://www.phpmyadmin.net
 --
--- Generation Time: Dec 17, 2012 at 11:06 PM
+-- Generation Time: Dec 17, 2012 at 11:08 PM
 -- Server version: 5.0.91-log
 -- PHP Version: 5.3.8
 
@@ -55,7 +55,7 @@ CREATE TABLE IF NOT EXISTS `plan` (
   KEY `sid` (`subject`),
   KEY `rid` (`room`),
   KEY `tid` (`type`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_cs AUTO_INCREMENT=10146 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_cs;
 
 -- --------------------------------------------------------
 
@@ -90,4 +90,4 @@ CREATE TABLE IF NOT EXISTS `type` (
   `name` varchar(40) character set latin1 collate latin1_german1_ci NOT NULL,
   `nice` varchar(40) character set latin1 collate latin1_german1_ci default NULL,
   PRIMARY KEY  (`tid`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_cs AUTO_INCREMENT=13 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_cs;
