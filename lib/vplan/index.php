@@ -3,7 +3,7 @@ class VPlan {
 	private $dbh;
 	private $mbox;
 
-	public static $expire = 60 * 5; // 5 minutes
+	public static $expire = 300; // 5 minutes
 
 	public function __construct($dbh, $lessonTimes) {
 		$this->dbh = $dbh;
