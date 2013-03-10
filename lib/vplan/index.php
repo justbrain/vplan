@@ -3,6 +3,8 @@ class VPlan {
 	private $dbh;
 	private $mbox;
 
+	public static $expire = 60 * 5; // 5 minutes
+
 	public function __construct($dbh, $lessonTimes) {
 		$this->dbh = $dbh;
 		$this->lessonTimes = $lessonTimes;
@@ -32,8 +34,6 @@ class VPlan {
 		return $current_dates;
 	}
 	public function mailCheck($from, $subject_today, $subject_tomorrow) {
-		$info = $this->getInfo(array('last_message_time'));
-
 		$headers_today = imap_search($this->mbox, 'FROM ' . $from . ' SUBJECT ' . $subject_today);
 		$headers_tomorrow = imap_search($this->mbox, 'FROM ' . $from . ' SUBJECT ' . $subject_tomorrow);
 
@@ -46,7 +46,7 @@ class VPlan {
 		$last_message_time = strtotime($header_tomorrow->date);
 
 		$res = false;
-		if (!isset($info['last_message_time']) || (int) $info['last_message_time'] !== $last_message_time) {
+		if (!$this->lastMessageTime || (int) $this->lastMessageTime !== $last_message_time) {
 			$this->setInfo('last_message_time', $last_message_time);
 
 			$res = (object) array(
@@ -66,9 +66,17 @@ class VPlan {
 		return $html;
 	}
 	public function updatePlan($from, $subject_today, $subject_tomorrow) {
+		$info = $this->getInfo(array('last_message_time', 'last_check_time'));
+		$this->lastMessageTime = (isset($info['last_message_time'])) ? $info['last_message_time'] : null;
+		$this->lastCheckime = (isset($info['last_check_time'])) ? $info['last_check_time'] : null;
+
+		if ($this->lastCheckime + self::$expire > time()) return false; // Cache
+
+		$this->setInfo('last_check_time', time());
+
 		$ids = $this->mailCheck($from, $subject_today, $subject_tomorrow);
 
-		if (!$ids) return false;
+		if (!$ids) return false; // No changes in mbox
 
 		$html_today = $this->mailFetch($ids->today);
 		$html_tomorrow = $this->mailFetch($ids->tomorrow);
@@ -305,7 +313,6 @@ class VPlan {
 		if (count($insert_subjects) !== 0) $this->dbh->prepare('INSERT IGNORE INTO subject (subject) VALUES ' . implode(',', array_fill(0, count($insert_subjects), '(?)')))->execute($insert_subjects);
 		if (count($insert_rooms) !== 0) $this->dbh->prepare('INSERT IGNORE INTO room (room) VALUES ' . implode(',', array_fill(0, count($insert_rooms), '(?)')))->execute($insert_rooms);
 
-		//var_dump($data);
 		if (count($dates) !== 0) {
 			// Only future events can be deleted.
 			$this->dbh->prepare('UPDATE plan SET deleted = 1 WHERE time > ? AND date IN(' . implode(',', array_fill(0, count($dates), '?')) . ')')->execute(array_merge(array(time()), $dates));
