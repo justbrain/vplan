@@ -23,12 +23,13 @@ class VPlan {
 	public function getCurrentDates() {
 		$current_dates = array();
 
-		$current_dates_q = $this->dbh->query('SELECT date FROM plan GROUP BY DAY(FROM_UNIXTIME(date)), MONTH(FROM_UNIXTIME(date)), YEAR(FROM_UNIXTIME(date)) ORDER BY date DESC LIMIT 2');
+		$current_dates_q = $this->dbh->prepare('SELECT date FROM plan WHERE date > ? GROUP BY DAY(FROM_UNIXTIME(date)), MONTH(FROM_UNIXTIME(date)), YEAR(FROM_UNIXTIME(date)) ORDER BY date ASC LIMIT 2');
+		$current_dates_q->execute(array(mktime(0, 0, 0, date('n'), date('j'), date('Y'))));
 		while ($current_date = $current_dates_q->fetch(PDO::FETCH_OBJ)) {
 			$current_dates[] = mktime(0, 0, 0, date('n', $current_date->date), date('j', $current_date->date), date('Y', $current_date->date));
 		}
 
-		return array_reverse($current_dates);
+		return $current_dates;
 	}
 	public function mailCheck($from, $subject_today, $subject_tomorrow) {
 		$info = $this->getInfo(array('last_message_time'));
