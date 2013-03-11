@@ -7,6 +7,7 @@ class VPlan {
 
 	public function __construct($dbh, $lessonTimes) {
 		$this->dbh = $dbh;
+		$this->dbh->exec('SET NAMES utf8');
 		$this->lessonTimes = $lessonTimes;
 
 		$this->types = array();
