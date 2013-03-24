@@ -1,9 +1,12 @@
+      <!-- Vielen Dank schonmal fuer das schnelle Aendern ;) -->
 			<h2>Verantwortlich f&uuml;r den Inhalt nach &sect; 6 Abs. 2 MDStV</h2>
 			<p>
-				Felix Buchm&uuml;ller<br />
-				Lena G&ouml;th<br />
-				Maximilian von B&uuml;low<br />
-				Noah Haas
+				Julian Erbeling<br />
+				Julian von B&uuml;low<br />
+        Sezgen Ipekoglu<br />
+        Manuel H&uuml;bner<br />
+        Gabriel H&uuml;bner<br />
+				<!-- Erg&auml;nzt :D -->
 			</p>
 			<p>
 				<h3>Kontakt</h3>
@@ -15,6 +18,11 @@
 			</p>
 			<p>
 				<h3>Bei Problemen oder Fragen zum Online-Vertretungsplan</h3>
-				Maximilian von B&uuml;low<br />
-				eMail: <a href="mailto:max@m9x.de">max@m9x.de</a>
+				Julian Erbeling<br />
+				eMail: <a href="mailto:kontakt@julian-erbeling.de">kontakt@julian-erbeling.de</a>
+			</p>
+			<p>
+				<h3>Mitwirkende Entwickler</h3>
+				<div>&copy; 2012-2013 Max von Bülow</div>
+				<div>&copy; 2013 Julian Erbeling</div>
 			</p>
