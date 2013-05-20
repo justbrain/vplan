@@ -5,16 +5,16 @@ $tomorrow = $today + 60 * 60 * 24;
 $days = array('Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag');
 
 $date_today = $current_dates[0];
-$date_tomorrow = $current_dates[1];
-
 $day_today = $days[date('w', $date_today)];
-$day_tomorrow = $days[date('w', $date_tomorrow)];
-
 if ($date_today == $today) $day_today = 'Heute';
 elseif ($date_today == $tomorrow) $day_today = 'Morgen';
 
-if ($date_tomorrow == $today) $day_tomorrow = 'Heute';
-elseif ($date_tomorrow == $tomorrow) $day_tomorrow = 'Morgen';
+if (isset($current_dates[1])) {
+	$date_tomorrow = $current_dates[1];
+	$day_tomorrow = $days[date('w', $date_tomorrow)];
+	if ($date_tomorrow == $today) $day_tomorrow = 'Heute';
+	elseif ($date_tomorrow == $tomorrow) $day_tomorrow = 'Morgen';
+}
 ?>
 <!doctype html>
 <html>
@@ -52,7 +52,9 @@ elseif ($date_tomorrow == $tomorrow) $day_tomorrow = 'Morgen';
 				<div id="plan-menu">
 					<ul>
 						<li><a href="#today" id="button-plan-today" class="button-plan"><?= $day_today ?></a></li>
+<?php if ($day_tomorrow) { ?>
 						<li><a href="#tomorrow" id="button-plan-tomorrow" class="button-plan"><?= $day_tomorrow ?></a></li>
+<?php } ?>
 					</ul>
 					<div class="clearfix"></div>
 				</div>
