@@ -52,7 +52,7 @@ if (isset($current_dates[1])) {
 				<div id="plan-menu">
 					<ul>
 						<li><a href="#today" id="button-plan-today" class="button-plan"><?= $day_today ?></a></li>
-<?php if ($day_tomorrow) { ?>
+<?php if (isset($day_tomorrow)) { ?>
 						<li><a href="#tomorrow" id="button-plan-tomorrow" class="button-plan"><?= $day_tomorrow ?></a></li>
 <?php } ?>
 					</ul>
