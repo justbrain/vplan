@@ -1,5 +1,5 @@
 # VPlan
-Dies ist der Sourcecode zu dem Onlinevertretungsplan der IGS MZ-B. Modifikationen können an dieser Repository vorgenommen werden und werden dann manuell eingespielt.
+This is the Sourcecode of the *VPlan*. It was originally developed by students of the IGS Mainz-Bretzenheim.
 
 # App
 https://github.com/craftylighthouseapps/Vplan
