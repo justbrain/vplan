@@ -15,8 +15,8 @@ https://github.com/craftylighthouseapps/Vplan
 GPL v3
 
 # Used libs
-* http://www.opensource.org/licenses/mit-license.php (The MIT License)
-* https://github.com/html5lib/html5lib-php (Custom license)
+* php-mobile-detect: https://code.google.com/p/php-mobile-detect/ (The MIT License)
+* html5lib-php: https://github.com/html5lib/html5lib-php (Custom license)
 
 # Todo
 Replace the html5lib because it is published under a custom license and is currently unmaintained.
