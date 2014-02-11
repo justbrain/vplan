@@ -1,4 +1,11 @@
 <?php
+/**
+ * VPlan
+ *
+ * @copyright  2012-2014 Maximilian von Buelow
+ * @link       https://github.com/magcks/vplan
+ */
+
 class VPlan {
 	private $dbh;
 	private $mbox;
