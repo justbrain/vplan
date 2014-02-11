@@ -2,10 +2,9 @@
 			<p>
 				Julian Erbeling<br />
 				Julian von B&uuml;low<br />
-        Sezgen Ipekoglu<br />
-        Manuel H&uuml;bner<br />
-        Gabriel H&uuml;bner<br />
-				<!-- Erg&auml;nzt :D -->
+				Sezgen Ipekoglu<br />
+				Manuel H&uuml;bner<br />
+				Gabriel H&uuml;bner<br />
 			</p>
 			<p>
 				<h3>Kontakt</h3>
