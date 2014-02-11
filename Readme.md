@@ -11,9 +11,6 @@ https://github.com/craftylighthouseapps/Vplan
 ## Administration IGS Mainz-Bretzenheim:
 * Julian Erbeling (@craftylighthouseapps)
 
-# Donation
-[![PayPal - Donate](https://www.paypal.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LY3RCQE9RWGHA)
-
 # License
 GPL v3
 
@@ -23,3 +20,6 @@ GPL v3
 
 # Todo
 Replace the html5lib because it is published under a custom license and is currently unmaintained.
+
+# Donation
+[![PayPal - Donate](https://www.paypal.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LY3RCQE9RWGHA)
