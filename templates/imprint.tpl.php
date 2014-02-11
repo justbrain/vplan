@@ -8,5 +8,5 @@
 			</p>
 			<p>
 				<h3>Frage, Sourcecode, etc.</h3>
-				<a href="https://github.com/magcks/vplan" target="_blank">Github Repositor</ya>
+				<a href="https://github.com/magcks/vplan" target="_blank">Github Repository</a>
 			</p>
