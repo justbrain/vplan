@@ -1,6 +1,6 @@
 			<h2>Verantwortlich f&uuml;r den Inhalt nach &sect; 6 Abs. 2 MDStV</h2>
 			<p>
-				<!-- insert admis here -->
+				<!-- insert admins here -->
 			</p>
 			<p>
 				<h3>Kontakt</h3>
