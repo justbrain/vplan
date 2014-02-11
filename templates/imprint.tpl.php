@@ -7,6 +7,6 @@
 				<!-- insert address here -->
 			</p>
 			<p>
-				<h3>Frage, Sourcecode, etc.</h3>
+				<h3>Fragen, Sourcecode, etc.</h3>
 				<a href="https://github.com/magcks/vplan" target="_blank">Github Repository</a>
 			</p>
