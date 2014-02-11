@@ -1,10 +1,9 @@
 <?php
 /**
- * IGS Mainz-Bretzenheim representation plan
+ * VPlan
  *
- * @author     Maximilian von Buelow <max@m9x.de>
- * @copyright  2012 Maximilian von Buelow
- * @link       https://github.com/justbrain/vplan
+ * @copyright  2012-2014 Maximilian von Buelow
+ * @link       https://github.com/magcks/vplan
  */
 
 if ($_SERVER['HTTP_HOST'] !== 'vplan.igsmz.net' && $_SERVER['HTTP_HOST'] !== 'localhost') {
