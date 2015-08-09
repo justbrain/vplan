@@ -40,9 +40,9 @@ if (isset($current_dates[1])) {
 		<meta name="viewport" content="width=device-width" />
 <?php } ?>
 
-		<script type="text/javascript" src="/javascripts/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="/javascript/jquery.js"></script>
 		<script type="text/javascript">var env = <?php echo json_encode($env); ?>;</script>
-		<script type="text/javascript" src="/javascripts/script.js?v=4"></script>
+		<script type="text/javascript" src="/javascript/script.js?v=4"></script>
 	</head>
 	<body>
 		<div id="header-wrapper">
