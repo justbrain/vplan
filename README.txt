@@ -7,7 +7,7 @@ Note: External libraries were removed from the repository in August 2015.
       Please put the file "Mobile_Detect.php" from
       https://github.com/serbanghita/mobile-detect to /lib/mobile and
       clone the contents of https://github.com/html5lib/html5lib-php to
-      /lib/html5lib. Make shure that a JQuery version was copied to
+      /lib/html5lib. Make sure that a JQuery version was copied to
       /javascript/jquery.js (Tested and works with 1.7.2).
       $ mkdir ./vplan/lib/mobile
       $ mkdir ./vplan/lib/html5lib
