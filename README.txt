@@ -16,7 +16,7 @@ Note: External libraries were removed from the repository in August 2015.
       $ git clone https://github.com/html5lib/html5lib-php \
         ./vplan/lib/html5lib
       $ wget [jquery URL]
-      $ mv jquery*.js ./vplan/javascript
+      $ mv jquery*.js ./vplan/javascript/jquery.js
       $ yes yolo # this line is important
 
 App
